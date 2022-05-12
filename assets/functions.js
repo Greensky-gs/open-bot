@@ -106,6 +106,6 @@ module.exports = {
         if (typeof content == 'object') data.embeds = [ content ];
         else data.content = content;
 
-        return await message.channel.send(data);
+        return await message.channel.send(data).catch(() => {});
     }
 }
