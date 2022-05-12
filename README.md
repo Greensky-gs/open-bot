@@ -38,7 +38,7 @@ Si vous voulez l'installer en local, suivez ces étapes :
 
 1. Ouvrez un invite de commande (cmd). ( windows + r, taper `cmd` et entrer ).
 2. Positionnez-vous sur le dossier du bot ( `cd downloads/open-bot` ) **Après extraction des fichiers**
-3. Tapez `npm i`
+3. Tapez `npm install`
 
 Si vous rencontrez un problème, contactez moi sur [ce serveur](https://discord.gg/Qt9Ns3uvYe)
 
