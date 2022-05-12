@@ -16,7 +16,7 @@ module.exports = {
      * @param {String} prefix 
      * @param {String} lang 
      */
-    run: async(message, args, client, prefix, lang) => {
+    run: async(message, args) => {
         await message.guild.members.fetch();
         await message.guild.roles.fetch();
 
