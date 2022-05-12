@@ -69,7 +69,7 @@ module.exports = {
                             interaction.deleteReply().catch(() => {});
                         }, 2500);
                     });
-                }
+                };
             });
         });
     }
