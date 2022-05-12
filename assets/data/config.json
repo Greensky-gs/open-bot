@@ -6,5 +6,6 @@
     "statut": "Le contenu affiché en statut",
     "status": "PLAYING",
     "disponible_status": ["PLAYING", "WATCHING", "STREAMING", "LISTENING"],
-    "replyToMention": true
+    "replyToMention": true,
+    "github": "https://github.com/Greensky-gs/open-bot"
 }

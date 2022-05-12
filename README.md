@@ -24,11 +24,13 @@ Le fichier `config.json` doit être remplit de cette manière :
   "statut": "Message affiché en statut du bot",
   "status": "PLAYING ou WATCHING ou STREAMING ou LISTENING",
   "disponible_status": ["PLAYING", "WATCHING", "STREAMING", "LISTENING", "Ceci sont les statut disponibles"],
-  "replyToMention": true
+  "replyToMention": true,
+  "github":"https://github.com/Greensky-gs/open-bot"
 }
 ```
 
-Note : `replyToMention` peut être configuré sur `false` si le bot ne doit pas répondre lorsqu'on le mentionne.
+Notes : `replyToMention` peut être configuré sur `false` si le bot ne doit pas répondre lorsqu'on le mentionne.
+`github` est le lien de la source du bot. Merci de ne pas le modifier.
 
 # Modules
 Le repertoire ne contient pas de dossier `node_modules`.
