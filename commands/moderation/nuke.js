@@ -1,4 +1,5 @@
 const { Message } = require('discord.js');
+const row = require('../../assets/data/confirm');
 
 module.exports = {
     help: {
@@ -12,6 +13,6 @@ module.exports = {
      * @param {Message} message 
      */
     run: message => {
-        
+        message.channel.send({ content: `Vous êtes sur le point de supprimer ${message.channel.name}.\nÊtes-vous sûr de continuer ?`, components: [ row ], reply:{ messageReference: message } })
     }
 }
