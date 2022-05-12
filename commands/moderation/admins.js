@@ -16,6 +16,10 @@ module.exports = {
         const admins = (await message.guild.members.fetch()).filter(m => m.permissions.has('ADMINISTRATOR')).sort((a, b) => (a.nickname ? a.nickname : a.user.username) - (b.nickname ? b.nickname : b.user.username))
 
         const embed = classicEmbed(message.author)
-            .setTitle
+            .setTitle(`${admins.size} admin${admins.size > 1 ? 's':''}`)
+            .setColor(message.guild.me.displayHexColor)
+            .setDescription(admins.map(x => `<@${x.id}>`).join(', '))
+
+        reply(message, embed);
     }
 }
