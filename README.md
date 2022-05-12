@@ -30,5 +30,17 @@ Le fichier `config.json` doit être remplit de cette manière :
 
 Note : `replyToMention` peut être configuré sur `false` si le bot ne doit pas répondre lorsqu'on le mentionne.
 
+# Modules
+Le repertoire ne contient pas de dossier `node_modules`.
+
+Sur un hébergeur, la création de ce dossier se fait automatiquement au démarrage, vous pouvez passer à l'étape suivante.
+Si vous voulez l'installer en local, suivez ces étapes :
+
+1. Ouvrez un invite de commande (cmd). ( windows + r, taper `cmd` et entrer ).
+2. Positionnez-vous sur le dossier du bot ( `cd downloads/open-bot` ) **Après extraction des fichiers**
+3. Tapez `npm i`
+
+Si vous rencontrez un problème, contactez moi sur [ce serveur](https://discord.gg/Qt9Ns3uvYe)
+
 # Erreurs
 Si vous rencontrez une erreur, contactez sur [ce serveur](https://discord.gg/Qt9Ns3uvYe).
