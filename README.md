@@ -32,6 +32,17 @@ Le fichier `config.json` doit être remplit de cette manière :
 Notes : `replyToMention` peut être configuré sur `false` si le bot ne doit pas répondre lorsqu'on le mentionne.
 `github` est le lien de la source du bot. Merci de ne pas le modifier.
 
+# Commands ignorées
+Vous pouvez ignorer des commandes en mettant leur nom (ou un de leur alias) dans le fichier `assets/data/cmds-ignore.txt`.
+Séparez les commandes par des espaces
+
+__Exemple :__
+```
+ban banlist admins
+```
+
+Si vous ne voulez ignorer aucune commande, ne mettez rien.
+
 # Modules
 Le repertoire ne contient pas de dossier `node_modules`.
 
