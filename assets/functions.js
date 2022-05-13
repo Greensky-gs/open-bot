@@ -1,4 +1,5 @@
 const { Message, User, MessageEmbed, GuildMember } = require('discord.js');
+const { readFileSync } = require('fs');
 
 /**
  * @param {User} user
@@ -14,7 +15,8 @@ module.exports = {
         return {
             commands: require('./data/commands'),
             configs: require('./data/config.json'),
-            perms: require('./data/perms.json')
+            perms: require('./data/perms.json'),
+            ignored: readFileSync('./assets/data/cmds-ignore.txt').toString().split(' ').filter(x => x !== 'ignored')
         }
     },
     /**
