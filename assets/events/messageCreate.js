@@ -1,1 +1,0 @@
-module.exports = {event: 'messageCreate', execute: require('../assets/message')};
