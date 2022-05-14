@@ -109,5 +109,14 @@ module.exports = {
         else data.content = content;
 
         return await message.channel.send(data).catch(() => {});
+    },
+    /**
+     * @param {{ max: Number, min: Number }} data
+     */
+    random: (data) => {
+        let max = (data.max || 100);
+        let min = (data.min || 0);
+
+        return Math.floor(Math.random() * max - min) + min;
     }
 }
