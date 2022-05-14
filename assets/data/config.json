@@ -1,10 +1,10 @@
 {
-    "name":"Greensky [*BOT] (BETA)",
-    "pfp": "https://cdn.discordapp.com/avatars/386479065307152384/fdaea0e7a5e5bfc801d7cbfce1d956fc.png",
-    "token": "OTE4MTM3OTczMjAyMTEyNTky.YbC4ng.dNUijfFgYddBLDdn6APtGmQ8T2U",
-    "prefix": "!",
-    "statut": "Le contenu affiché en statut",
-    "status": "PLAYING",
+    "name":"",
+    "pfp": "",
+    "token": "",
+    "prefix": "",
+    "statut": "",
+    "status": "",
     "disponible_status": ["PLAYING", "WATCHING", "STREAMING", "LISTENING"],
     "replyToMention": true,
     "github": "https://github.com/Greensky-gs/open-bot"
