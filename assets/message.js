@@ -21,7 +21,7 @@ const exported = (message) => {
     let args = message.content.slice(prefix.length).split(' ');
     let commandName = args.shift().toLowerCase();
 
-    let command = commands.get(commandName) || commands.find(x => x.help.aliases && x.help.aliases.includes(cmdName));
+    let command = commands.get(commandName) || commands.find(x => x.help.aliases && x.help.aliases.includes(commandName));
 
     if (!command) return;
 

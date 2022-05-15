@@ -15,7 +15,7 @@ module.exports = {
      * @param {Array} args 
      */
     run: (message, args) => {
-        let cmdName = (args.shift() || 'no command').toLowerCase();
+        const cmdName = (args.shift() || 'no command').toLowerCase();
         let cmd = commands.get(cmdName) || commands.find(x => x.help.aliases.includes(cmdName));
         
         if (!cmd) return reply(message, `Cette commande n'existe pas.\nVérifiez que cette commande n'est pas ignorée ( \`${package().configs.prefix}ignored\` )`);
