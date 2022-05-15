@@ -16,7 +16,7 @@ module.exports = {
             commands: require('./data/commands'),
             configs: require('./data/config.json'),
             perms: require('./data/perms.json'),
-            ignored: readFileSync('./assets/data/cmds-ignore.txt').toString().split(' ').filter(x => x !== 'ignored')
+            ignored: require('./data/cmds-ignore.json').filter(x => x !== 'ignored')
         }
     },
     /**

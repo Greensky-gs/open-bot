@@ -1,9 +1,9 @@
-const { readdirSync, readFileSync } = require('fs');
+const { readdirSync } = require('fs');
 const { Collection } = require('discord.js');
 
 const commands = new Collection();
 
-const ignored = readFileSync('./assets/data/cmds-ignore.txt').toString().split(' ').filter(x => x !== 'ignored');
+const ignored = require('./cmds-ingore.json').filter(x => x !== 'ignored');
 
 readdirSync('./commands').forEach((folder) => {
     readdirSync(`./commands/${folder}`).filter(x => x.endsWith('.js')).forEach(fileName => {
