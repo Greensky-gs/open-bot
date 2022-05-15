@@ -1,7 +1,7 @@
 const { Message } = require('discord.js');
 const { reply } = require('../../assets/functions');
 
-module.exprots = {
+module.exports = {
     help: {
         name: 'pin',
         description: "Épingle le message cité en réponse",

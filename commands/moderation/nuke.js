@@ -13,7 +13,7 @@ module.exports = {
      * @param {Message} message 
      */
     run: message => {
-        const nuke = () => {
+        const nuke = async() => {
             const propreties = {
                 name: message.channel.name,
                 parentID: message.channel.parentId,

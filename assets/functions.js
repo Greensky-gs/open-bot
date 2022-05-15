@@ -16,7 +16,7 @@ module.exports = {
             commands: require('./data/commands'),
             configs: require('./data/config.json'),
             perms: require('./data/perms.json'),
-            ignored: require('./data/cmds-ignored.json').filter(x => x !== 'ignored')
+            ignored: require('./data/cmds-ingored.json').filter(x => x !== 'ignored')
         }
     },
     /**
